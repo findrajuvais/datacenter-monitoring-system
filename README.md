@@ -1,6 +1,6 @@
 # Data Center Monitoring System
 
-A production-grade distributed monitoring platform built for enterprise Oracle RAC environments, providing real-time infrastructure health monitoring, Oracle cluster monitoring, KPI tracking, log analysis, and automated alerting.
+A production-grade distributed monitoring platform built for Oracle RAC environments, providing real-time infrastructure health monitoring, Oracle cluster monitoring, KPI tracking, log analysis, and automated alerting.
 
 ## Scale
 
@@ -16,13 +16,9 @@ A production-grade distributed monitoring platform built for enterprise Oracle R
 
 ## Tech Stack
 
-### Agent
-**Golang**
-
+### **Agent**: Golang
 Deployed on every Oracle RAC node.
-
 Responsibilities:
-
 - Node health monitoring
 - CPU utilization monitoring
 - Memory monitoring
@@ -33,11 +29,8 @@ Responsibilities:
 
 ---
 
-### Backend
-**Node.js**
-
+### **Backend**: Node.js
 Handles:
-
 - High-frequency agent communication
 - Real-time health ingestion
 - Monitoring APIs
@@ -46,12 +39,8 @@ Handles:
 
 ---
 
-
-### Frontend
-**React.js**
-
+### **Frontend**: React.js
 Provides:
-
 - Centralized monitoring dashboard
 - Data center overview
 - RAC cluster health view
@@ -62,11 +51,8 @@ Provides:
 
 ---
 
-### Database
-**MySQL**
-
+### **Database**:MySQL
 Stores:
-
 - Data center inventory
 - Cluster configuration
 - Node information
@@ -76,11 +62,8 @@ Stores:
 
 ---
 
-## Cache Layer
-**Redis**
-
+### **Cache Layer**: Redis
 Used for:
-
 - Real-time node heartbeat tracking
 - Latest health status caching
 - Fast dashboard response
@@ -92,9 +75,7 @@ Used for:
 ## Oracle RAC Monitoring Features
 
 ### Cluster Health Monitoring
-
 Monitors:
-
 - Oracle High Availability Services (OHAS)
 - Cluster Ready Services (CRS)
 - RAC node status
@@ -106,9 +87,7 @@ Monitors:
 ---
 
 ### Infrastructure Monitoring
-
 Tracks:
-
 - CPU utilization
 - Memory usage
 - Disk space utilization
@@ -116,7 +95,6 @@ Tracks:
 - System health
 
 Alerts generated when:
-
 - CPU exceeds threshold
 - Disk usage exceeds 80%
 - Node becomes unavailable
@@ -125,9 +103,7 @@ Alerts generated when:
 ---
 
 ### KPI Monitoring
-
 Collects Oracle performance indicators:
-
 - Database status
 - Instance availability
 - RAC health metrics
@@ -138,16 +114,13 @@ Collects Oracle performance indicators:
 ---
 
 ### Log Monitoring & Analysis
-
 Monitors Oracle logs:
-
 - Database Alert Logs
 - ASM Logs
 - CRS Logs
 - Clusterware Logs
 
 Detects:
-
 - Database failures
 - Cluster issues
 - ASM problems
@@ -157,11 +130,8 @@ Detects:
 ---
 
 ### Alerting System
-
 Automatically sends alerts to Oracle DBA teams through email.
-
 Alert scenarios:
-
 - RAC node down
 - Database instance unavailable
 - CRS/OHAS failure
@@ -171,21 +141,18 @@ Alert scenarios:
 - Critical Oracle errors detected in logs
 
 ---
-
 ## Key Features
-
-✅ Multi data center monitoring  
-✅ 1200+ node real-time visibility  
-✅ Oracle RAC cluster monitoring  
-✅ Automated log analysis  
-✅ KPI monitoring  
-✅ Disk and infrastructure monitoring  
-✅ Agent-based scalable architecture  
-✅ Centralized dashboard  
-✅ Automated DBA alert notification
+- Multi data center monitoring  
+- 1200+ node real-time visibility  
+- Oracle RAC cluster monitoring  
+- Automated log analysis  
+- KPI monitoring  
+- Disk and infrastructure monitoring  
+- Agent-based scalable architecture  
+- Centralized dashboard  
+- Automated DBA alert notification
 
 ## Business Impact
-
 - Reduced manual RAC health checks
 - Faster incident detection
 - Proactive Oracle issue identification
