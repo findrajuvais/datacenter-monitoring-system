@@ -16,9 +16,10 @@ A production-grade distributed monitoring platform built for Oracle RAC environm
 
 ## Tech Stack
 
-### **Agent**: Golang
+### Agent — Golang
 Deployed on every Oracle RAC node.
-Responsibilities:
+
+**Responsibilities:**
 - Node health monitoring
 - CPU utilization monitoring
 - Memory monitoring
@@ -29,8 +30,8 @@ Responsibilities:
 
 ---
 
-### **Backend**: Node.js
-Handles:
+### Backend - Node.js
+**Handles:**
 - High-frequency agent communication
 - Real-time health ingestion
 - Monitoring APIs
@@ -39,8 +40,8 @@ Handles:
 
 ---
 
-### **Frontend**: React.js
-Provides:
+### Frontend - React.js
+**Provides:**
 - Centralized monitoring dashboard
 - Data center overview
 - RAC cluster health view
@@ -51,8 +52,8 @@ Provides:
 
 ---
 
-### **Database**:MySQL
-Stores:
+### Database - MySQL
+**Stores:**
 - Data center inventory
 - Cluster configuration
 - Node information
@@ -62,8 +63,8 @@ Stores:
 
 ---
 
-### **Cache Layer**: Redis
-Used for:
+### Cache/Sessions - Redis
+**Used for:**
 - Real-time node heartbeat tracking
 - Latest health status caching
 - Fast dashboard response
@@ -72,10 +73,9 @@ Used for:
 ---
 
 
-## Oracle RAC Monitoring Features
-
+## Key Features
 ### Cluster Health Monitoring
-Monitors:
+**Monitors:**
 - Oracle High Availability Services (OHAS)
 - Cluster Ready Services (CRS)
 - RAC node status
@@ -87,14 +87,14 @@ Monitors:
 ---
 
 ### Infrastructure Monitoring
-Tracks:
+**Tracks:**
 - CPU utilization
 - Memory usage
 - Disk space utilization
 - Node availability
 - System health
 
-Alerts generated when:
+**Alerts generated when:**
 - CPU exceeds threshold
 - Disk usage exceeds 80%
 - Node becomes unavailable
@@ -103,7 +103,7 @@ Alerts generated when:
 ---
 
 ### KPI Monitoring
-Collects Oracle performance indicators:
+**Collects Oracle performance indicators:**
 - Database status
 - Instance availability
 - RAC health metrics
@@ -114,13 +114,13 @@ Collects Oracle performance indicators:
 ---
 
 ### Log Monitoring & Analysis
-Monitors Oracle logs:
+**Monitors Oracle logs:**
 - Database Alert Logs
 - ASM Logs
 - CRS Logs
 - Clusterware Logs
 
-Detects:
+**Detects:**
 - Database failures
 - Cluster issues
 - ASM problems
@@ -131,7 +131,7 @@ Detects:
 
 ### Alerting System
 Automatically sends alerts to Oracle DBA teams through email.
-Alert scenarios:
+**Alert scenarios:**
 - RAC node down
 - Database instance unavailable
 - CRS/OHAS failure
