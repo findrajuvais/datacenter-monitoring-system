@@ -159,4 +159,8 @@ Automatically sends alerts to Oracle DBA teams through email.
 - Centralized visibility across multiple data centers
 
 ## Problem I solved
-Distributed monitoring across 1,200+ nodes created high-frequency data ingestion challenges. Implemented Redis in-memory store to handle 1,200+ heartbeats every 30 seconds without Disk I/O bottleneck, ensuring zero data loss and real-time alerting.
+
+**Challenge & Solution**
+Distributed monitoring across 1,200+ nodes created high-frequency data ingestion challenges.
+
+Implemented Redis in-memory store to handle 1,200+ heartbeats every 30 seconds without Disk I/O bottleneck, ensuring zero data loss and real-time alerting.
